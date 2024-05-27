@@ -10,9 +10,9 @@ module "efs" {
   performance_mode = var.performance_mode
 
 
-  lifecycle_policy = {
-    transition_to_ia = "AFTER_90_DAYS"
-  }
+  # lifecycle_policy = {
+  #   transition_to_ia = "AFTER_90_DAYS"
+  # }
 
   # Mount targets / security group
   mount_targets              = var.mount_targets
